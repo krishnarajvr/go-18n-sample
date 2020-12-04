@@ -33,3 +33,16 @@ Uses github.com/nicksnyder/go-i18n/v2/i18n
     }
 }
 ```
+
+**  Code sample
+
+```
+		helloPerson := localizer.MustLocalize(&i18n.LocalizeConfig{
+			DefaultMessage: &i18n.Message{
+				ID: "HelloPerson",
+			},
+			TemplateData: map[string]interface{}{
+				"Name": name,
+			},
+		})
+```
