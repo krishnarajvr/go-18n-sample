@@ -13,7 +13,7 @@ Uses github.com/nicksnyder/go-i18n/v2/i18n
 
 ** Sample language
 
-```
+```json
 {
     "hello_world": "Hello World",
     "HelloPerson": {
@@ -36,7 +36,7 @@ Uses github.com/nicksnyder/go-i18n/v2/i18n
 
 **  Code sample
 
-```
+```golang
 		helloPerson := localizer.MustLocalize(&i18n.LocalizeConfig{
 			DefaultMessage: &i18n.Message{
 				ID: "HelloPerson",
